@@ -1,0 +1,25 @@
+at: Revolve
+title: Deeplearning Research
+contract: Apprenticeship
+where: Paris, France
+from: 10/2021
+to: 10/2022
+logo: resume_parts/experience/10-2021_Revolve/logo.png
+
+Body:
+  Contexte: |
+    Conception et déploiement, en autonomie, d’un modèle de Deep Learning servant d’adversaire pour l'entraînement d’une équipe d’e-sport de niveau international.
+
+  # Missions: |
+  #   XXXXX
+
+  Réalisations: |
+    - State of the art
+    - Exploratory Data Analysis et Data Preparation sur Big Data (~500K games)
+    - Design d’un ensemble de modèles
+    - Recherche d’architecture et d'hyper-paramètres
+    - Entraînement et Fine Tuning: Embeddings (CBOW) + Dense Neural Network + Recurrent Neural Network)
+    - Mise en production du modèle
+
+  Technologies: |
+    Python, (PyTorch Lightning, Hydra, Optuna, Pandas, Numpy, Ray, Matplotlib, Pytest), AWS, ML-Flow, DVC

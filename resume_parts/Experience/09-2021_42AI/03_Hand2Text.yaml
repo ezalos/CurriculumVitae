@@ -1,0 +1,29 @@
+at: 42 Artificial Intelligence
+title: Lead
+contract: associative
+where: Paris, France
+from: 04/2022
+to: 09/2022
+logo: resume_parts/experience/09-2021_42AI/logo.png
+
+Body:
+  Contexte: |
+    Création d’un traducteur du langage des signes dans le but de faciliter la communication lors des visioconférences.
+    Lead d'une équipe de 5.
+    https://github.com/AI-2-The-Sky/Hand2Text
+
+  Missions: |
+    - Design du projet (objectif et feuille de route)
+    - Recrutement étudiant (entretiens d'embauches et tests techniques)
+    - Mise en place d'un squelette de projet permettant un démarrage Jour 1.
+    - Suivi hebdomadaire des équipes: Méthode agile, conseils sur les choix techniques, et restitution de cours en groupe.
+    - Résolution des points de blocage et transmissions des connaissances nécessaires au projet.
+
+  Réalisations: |
+    - State of the art
+    - Datasets Collection
+    - Recherche d’architecture (ViT/ResNet Feature Extractor + Dense + RNN)
+    - Hyper-Parameter search + Training
+
+  Technologies: |
+    Python, (PyTorch Lightning, Hydra, Optuna, Numpy, Matplotlib, Pytest), AWS, ML-Flow, DVC

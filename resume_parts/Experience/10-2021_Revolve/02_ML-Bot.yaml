@@ -1,0 +1,23 @@
+at: Revolve
+title: Machine Learning Operations
+contract: Apprenticeship
+where: Paris, France
+from: 10/2021
+to: 10/2022
+logo: resume_parts/experience/10-2021_Revolve/logo.png
+
+Body:
+  Contexte: |
+    Création d’un Bot Slack en Serverless s’occupant de la gestion de modèles de Machine Learning et de Deep Learning.
+
+  # Missions: |
+  #   XXXXX
+
+  Réalisations: |
+    - Déploiement des Endpoints Sage Maker automatique et quotidien
+    - Interaction modèles <-> utilisateur depuis Slack avec données tabulaires / textes / images. Stockage des inputs utilisateurs / prédictions des modèles / feedback utilisateurs. Système de remontée d’erreurs in-Slack
+    - Création d’un template de déploiement sur AWS de modèles de Machine Learning et de Deep Learning. Tests en local sur le modèle conteneurisé, puis tests en remote une fois le modèle déployé.
+    - Releases en environnement de Développement / Staging / Production avec Continuous Integration & Continuous Development
+
+  Technologies: |
+    AWS (Sagemaker, IAM, S3, Cloud Watch, ECR), Python (Chalice, Boto3, Hugging-Face, Flask, Pytest), Docker, Gitlab-CI

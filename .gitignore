@@ -1,0 +1,7 @@
+*.out
+*.log
+*.aux
+.uuid
+
+__pycache__
+*.py[co]

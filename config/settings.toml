@@ -1,0 +1,13 @@
+[default]
+DEBUG = true
+YAML_CV_PARTS="./resume_parts/"
+YAML_EXPERIENCE="Experience/"
+LATEX_CV_PARTS="./resume_latex/sections/body/"
+LATEX_EXPERIENCE="Experience/"
+
+
+[development]
+DEBUG = true
+
+[production]
+DEBUG = false

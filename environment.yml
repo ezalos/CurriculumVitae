@@ -1,0 +1,16 @@
+name: resume
+
+channels:
+  - default
+  - conda-forge
+
+dependencies:
+  - python=3.8
+
+  - pyyaml
+  - fire
+  - dynaconf
+  - pathlib
+
+  # - pip
+  # - pip:
