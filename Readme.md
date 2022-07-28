@@ -2,13 +2,10 @@
 
 Automatic Curriculum Vitae generation
 
-## ToC
-
 - [Curriculum Vitae](#curriculum-vitae)
-	- [ToC](#toc)
 	- [My Resume](#my-resume)
 	- [Dependencies](#dependencies)
-	- [Install](#install)
+	- [Installation](#installation)
 	- [Build](#build)
 
 ## My Resume
@@ -22,7 +19,7 @@ For this project you need:
  - `docker`
  - `conda` which uses python >= 3.8
 
-## Install
+## Installation
 
 
 Optional step for conda + direnv combo:
@@ -37,7 +34,6 @@ Env creation:
 conda env create --file environment.yml
 conda activate resume
 ```
-
 
 
 ## Build
