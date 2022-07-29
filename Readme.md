@@ -4,6 +4,7 @@ Automatic Curriculum Vitae generation
 
 - [Curriculum Vitae](#curriculum-vitae)
 	- [My Resume](#my-resume)
+	- [Project goals](#project-goals)
 	- [Dependencies](#dependencies)
 	- [Installation](#installation)
 	- [Build](#build)
@@ -12,12 +13,26 @@ Automatic Curriculum Vitae generation
 
 ![CV Louis DEVELLE](CV_Louis_DEVELLE.png)
 
+## Project goals
+
+ - ✔️ A place where I can store a detailled memory of each position
+ - ✔️ A tool which automatically generate an updated general resume from them
+ - 🚧 A tool which helps me to tailor my resume for a given position
+   - Changing the accroche
+   - Selecting which positions
+   - For a position, selecting between the :
+     - accomplishments
+     - responsabilities
+     - technologies
+
+
 ## Dependencies
 
-For this project you need:
+For this project you need to have isntalled:
 
  - `docker`
- - `conda` which uses python >= 3.8
+ - `conda`
+
 
 ## Installation
 
@@ -39,9 +54,5 @@ conda activate resume
 ## Build
 
 ```sh
-export CV_DIR_LATEX=`pwd`/resume_latex
-python -m MakeResume && \
-docker run --rm -i -v $CV_DIR_LATEX:/data -v $CV_DIR_LATEX/fonts:/root/.fonts mingc/latex xelatex cv_12.tex && \
-mv -f $CV_DIR_LATEX/cv_12.pdf CV_Louis_DEVELLE.pdf && \
-pdftoppm CV_Louis_DEVELLE.pdf CV_Louis_DEVELLE -png -f 1 -singlefile
+./build_it.sh CV_name
 ```
