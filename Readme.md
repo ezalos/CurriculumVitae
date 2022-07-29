@@ -19,8 +19,8 @@ Automatic Curriculum Vitae generation
  - ✔️ A tool which automatically generate an updated general resume from them
  - 🚧 A tool which helps me to tailor my resume for a given position
    - Changing the accroche
-   - Selecting which positions
-   - For a position, selecting between the :
+   - Selecting which positions to display
+   - For a position, selecting individual elements to display from :
      - accomplishments
      - responsabilities
      - technologies
