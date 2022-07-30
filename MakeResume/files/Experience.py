@@ -27,6 +27,10 @@ class Experience:
         context = self.yaml["Body"]["Contexte"]
         return context
 
+    def get_technologies(self):
+        context = self.yaml["Body"].get("Technologies", None)
+        return context
+
     # ---------------------------------------------------------------------------- #
     #                               Header elements                                #
     # ---------------------------------------------------------------------------- #

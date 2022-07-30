@@ -56,3 +56,5 @@ conda activate resume
 ```sh
 ./build_it.sh CV_name
 ```
+
+## Usage
