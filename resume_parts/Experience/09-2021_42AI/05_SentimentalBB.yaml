@@ -12,19 +12,19 @@ Body:
     Lead d'une équipe de 6 personnes
     https://github.com/42-AI/SentimentalBB
 
-  Missions: |
-    - Design du projet (objectif et feuille de route)
-    - Recrutement étudiant (entretiens d'embauches et tests techniques)
-    - Mise en place d'un squelette de projet permettant un démarrage Jour 1.
-    - Suivi hebdomadaire des équipes: Méthode agile, conseils sur les choix techniques, et restitution de cours en groupe.
-    - Résolution des points de blocage et transmissions des connaissances nécessaires au projet.
+  Missions:
+    - "Design du projet (objectif et feuille de route)"
+    - "Recrutement étudiant (entretiens d'embauches et tests techniques)"
+    - "Mise en place d'un squelette de projet permettant un démarrage Jour 1."
+    - "Suivi hebdomadaire des équipes: Méthode agile, conseils sur les choix techniques, et restitution de cours en groupe."
+    - "Résolution des points de blocage et transmissions des connaissances nécessaires au projet."
 
-  Réalisations: |
-    - Scrapping de tweets quotidien, aggregation et stockage
-    - Preprocessing
-    - Entraînement à la détection de sentiment sur Allocine puis inférence sur nos tweets. Naive Bayes / Transformers (pre-trained) + Classifier.
-    - Génération de visuels quotidiens
-    - Création d’un dataset de tweets labellisés pour mesurer l’accuracy des modèles à l'inférence.
+  Réalisations:
+    - "Scrapping de tweets quotidien, aggregation et stockage"
+    - "Preprocessing"
+    - "Entraînement à la détection de sentiment sur Allocine puis inférence sur nos tweets. Naive Bayes / Transformers (pre-trained) + Classifier."
+    - "Génération de visuels quotidiens"
+    - "Création d’un dataset de tweets labellisés pour mesurer l’accuracy des modèles à l'inférence."
 
   Technologies: |
     Python (Sklearn,Hugging Face, Matplotlib/Seaborn, Pytest, Github Pages), AWS S3, DVC
