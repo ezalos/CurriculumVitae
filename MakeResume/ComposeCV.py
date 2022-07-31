@@ -16,7 +16,8 @@ class ComposeCV:
                 print(f"\t{xp.get_title() = }")
 
         xps = []
-        for c in ["Revolve", "Pole Emploi", "Cartier", "Natixis"]:
+        # for c in ["Revolve", "Pole Emploi", "Cartier", "Natixis"]:
+        for c in ["Revolve"]:
             xps.extend(experiences[c])
         self.WriteLaTeX.create_section("Experience", xps)
 

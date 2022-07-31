@@ -1,4 +1,4 @@
-from typing import Dict
+from typing import ContextManager, Dict
 
 import yaml
 
@@ -25,6 +25,18 @@ class Experience:
 
     def get_context(self):
         context = self.yaml["Body"]["Contexte"]
+        return context
+
+    def get_missions(self):
+        context = self.yaml["Body"].get("Missions", None)
+        return context
+
+    def get_realisations(self):
+        context = self.yaml["Body"].get("Réalisations", None)
+        return context
+
+    def get_technologies(self):
+        context = self.yaml["Body"].get("Technologies", None)
         return context
 
     # ---------------------------------------------------------------------------- #

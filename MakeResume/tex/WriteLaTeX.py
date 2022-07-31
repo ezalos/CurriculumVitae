@@ -55,6 +55,8 @@ class WriteLaTeX:
         if section:
             tex += f"\\section{{{section}}}\n"
         tex += self._get_input(includes)
+        if section:
+            tex += "\\sectionspace\n"
         return tex
 
     # ---------------------------------------------------------------------------- #

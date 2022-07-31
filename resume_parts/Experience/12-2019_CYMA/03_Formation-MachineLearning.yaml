@@ -15,13 +15,12 @@ Body:
   # Missions: |
   #   XXXXX
 
-  Réalisations: |
-    Plan:
-      - Exploratory Data Analysis (Data Visualisation, Feature identification)
-      - Preprocessing (Data Cleansing, Missing Value imputation, Feature Creation, Feature Engineering, Feature Normalization/Scaling, Dimensionality Reduction)
-      - Classification (Logistic Regression, Random Forest Classification, Support Vector Machine, Dense Neural Network Keras)
-      - Regression (Linear Regression, Random Forest Regresion, SVR)
-      - Model Validation (Scores, Cross Validation, HyperParameter Optimization)
+  Réalisations:
+    - "Exploratory Data Analysis (Data Visualisation, Feature identification)"
+    - "Preprocessing (Data Cleansing, Missing Value imputation, Feature Creation, Feature Engineering, Feature Normalization/Scaling, Dimensionality Reduction)"
+    - "Classification (Logistic Regression, Random Forest Classification, Support Vector Machine, Dense Neural Network Keras)"
+    - "Regression (Linear Regression, Random Forest Regresion, SVR)"
+    - "Model Validation (Scores, Cross Validation, HyperParameter Optimization)"
 
   Technologies: |
     Python (pandas, numpy, scikit learn, matplotlib, seaborn, keras), Jupyter-notebooks
