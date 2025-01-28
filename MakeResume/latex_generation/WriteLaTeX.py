@@ -67,7 +67,7 @@ class WriteLaTeX:
     # ---------------------------------------------------------------------------- #
 
     def to_draft(self):
-        json_path = "resume/drafts/full_draft.json"
+        json_path = "resume/out/drafts/full_draft.json"
         dict_obj = {}
         for section in self.tex_sections:
             dict_obj[section.data.section_name] = section.to_dict()
@@ -77,7 +77,7 @@ class WriteLaTeX:
             json.dump(dict_obj, f, indent=4)
 
     def from_draft(self):
-        json_path = "resume/drafts/full_draft.json"
+        json_path = "resume/out/drafts/full_draft.json"
         with open(json_path, "r", encoding="utf-8") as f:
             dict_obj = json.load(f)
         print(f"Loading {json_path = }")
