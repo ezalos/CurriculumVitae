@@ -3,7 +3,7 @@
 
 *.png
 *.jpg
-!latest.jpg
+!latest.png
 
 archive
 

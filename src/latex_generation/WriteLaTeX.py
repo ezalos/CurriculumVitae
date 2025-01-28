@@ -2,9 +2,9 @@ import json
 import os
 from typing import List
 
-from MakeResume.latex_generation.tex_path import TOP_TEX_IMPORT_PATH
-from MakeResume.latex_generation.TexElement import TexElement
-from MakeResume.latex_generation.TexSection import TexSection
+from src.latex_generation.tex_path import TOP_TEX_IMPORT_PATH
+from src.latex_generation.TexElement import TexElement
+from src.latex_generation.TexSection import TexSection
 
 t_path = str
 
