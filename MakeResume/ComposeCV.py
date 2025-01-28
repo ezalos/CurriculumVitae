@@ -1,27 +1,39 @@
-from MakeResume.files.ListExperiences import ListExperiences
-from MakeResume.tex.Elements.TexExperienceShort import TexExperienceShort
-from MakeResume.tex.WriteLaTeX import WriteLaTeX
+from typing import List
+
+from MakeResume.latex_generation.TexElement import TexElement
+from MakeResume.latex_generation.WriteLaTeX import WriteLaTeX
+from MakeResume.position_tailoring.BaselineTailoring import BaselineTailoring
+from MakeResume.resume_sources.all_experiences import ExperienceData, work_experience
 
 
 class ComposeCV:
     def __init__(self) -> None:
-        self.ListExperiences = ListExperiences()
-        self.WriteLaTeX = WriteLaTeX(TexExperienceShort)
+        self.WriteLaTeX = WriteLaTeX()
+
+    def prepare_experiences(self, experience_datas: List[ExperienceData]) -> List[TexElement]:
+        # self.llm_tailoring = LLM_Tailoring()
+        tex_elements = []
+        for experience_data in experience_datas:
+            experience_data = BaselineTailoring.tailor_experience(experience_data)
+            # experience_data = self.llm_tailoring.tailor_experience(experience_data)
+            tex_element = TexElement(experience_data=experience_data)
+            tex_elements.append(tex_element)
+        return tex_elements
 
     def make(self):
-        experiences = self.ListExperiences.get_experiences_by_company()
-        for company, xps in experiences.items():
-            print(f"For {company = }")
-            for xp in xps:
-                print(f"\t{xp.get_title() = }")
+        # Work Experience Section
+        self.WriteLaTeX.create_section(
+            "Expériences",
+            self.prepare_experiences(work_experience),
+        )
 
-        xps = []
-        # for c in ["Revolve", "Pole Emploi", "Cartier", "Natixis"]:
-        for c in ["Revolve"]:
-            xps.extend(experiences[c])
-        self.WriteLaTeX.create_section("Experience", xps)
+        # # Volunteering Section
+        # self.WriteLaTeX.create_section(
+        #     "Volontariat",
+        #     self.prepare_experiences(volunteering_experience),
+        # )
 
-        xps = experiences["42 Artificial Intelligence"]
-        self.WriteLaTeX.create_section("Volunteering", xps[:2])
+        self.WriteLaTeX.to_draft()
+        self.WriteLaTeX.from_draft()
 
-        self.WriteLaTeX.save()
+        self.WriteLaTeX.export_to_latex()
