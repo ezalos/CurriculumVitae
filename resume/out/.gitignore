@@ -1,0 +1,11 @@
+*.pdf
+!latest.pdf
+
+*.png
+*.jpg
+!latest.jpg
+
+archive
+
+drafts/*
+!drafts/.gitkeep

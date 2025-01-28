@@ -5,3 +5,10 @@
 
 __pycache__
 *.py[co]
+
+*.auto_gen.tex
+
+.envrc
+
+.venv
+.ruff_cache

@@ -12,7 +12,7 @@ Automatic Curriculum Vitae generation
 
 ## My Resume
 
-![CV Louis DEVELLE](resume/out/png/latest.png)
+![CV Louis DEVELLE](resume/out/latest.png)
 
 ## Project goals
 
@@ -33,6 +33,9 @@ For this project you need to have isntalled:
 
  - `docker`
  - `uv`
+ - apt:
+   - pdftoppm
+   - pngquant
 
 
 ## Installation
