@@ -7,11 +7,12 @@ Automatic Curriculum Vitae generation
 	- [Project goals](#project-goals)
 	- [Dependencies](#dependencies)
 	- [Installation](#installation)
-	- [Build](#build)
+	- [Build Resume](#build-resume)
+	- [Dev :](#dev-)
 
 ## My Resume
 
-![CV Louis DEVELLE](CV_Louis_DEVELLE.png)
+![CV Louis DEVELLE](resume/out/png/latest.png)
 
 ## Project goals
 
@@ -31,30 +32,32 @@ Automatic Curriculum Vitae generation
 For this project you need to have isntalled:
 
  - `docker`
- - `conda`
+ - `uv`
 
 
 ## Installation
 
 
-Optional step for conda + direnv combo:
 ```sh
-echo "eval \"\$(conda shell.bash hook)\"" > .envrc
-echo "conda activate resume" > .envrc
-direnv allow
-```
-
-Env creation:
-```sh
-conda env create --file environment.yml
-conda activate resume
+uv venv
+source .venv/bin/activate
+uv sync
 ```
 
 
-## Build
+## Build Resume
 
 ```sh
 ./build_it.sh CV_name
 ```
 
-## Usage
+
+
+## Dev :
+
+Update requriements :
+
+```sh
+rm requirements.txt
+uv pip compile pyproject.toml -o requirements.txt
+```
