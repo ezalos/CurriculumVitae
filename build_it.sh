@@ -120,7 +120,7 @@ echo -e $COLOR_GREEN "uv installation and environment are properly set up" $COLO
 # Latex generation
 ################################################################################
 
-$PYTHON_COMMAND -m MakeResume
+$PYTHON_COMMAND -m src
 
 if [ $? == 0 ]
 then

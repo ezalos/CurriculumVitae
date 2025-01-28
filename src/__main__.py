@@ -1,5 +1,4 @@
 import fire
-
 from MakeResume.ComposeCV import ComposeCV
 
 

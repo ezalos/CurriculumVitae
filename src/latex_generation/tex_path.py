@@ -1,7 +1,6 @@
 import os
 
 from dynaconf import settings
-
 from MakeResume.latex_generation.types import TexSectionData
 from MakeResume.resume_sources.all_experiences import ExperienceData
 

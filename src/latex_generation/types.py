@@ -1,8 +1,7 @@
 from typing import List, Optional
 
-from pydantic import BaseModel
-
 from MakeResume.resume_sources.all_experiences import ExperienceData
+from pydantic import BaseModel
 
 
 class TexElementData(BaseModel):
