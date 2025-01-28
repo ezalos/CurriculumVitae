@@ -1,13 +1,13 @@
 from typing import List
 
-from MakeResume.latex_generation.tex_path import (
+from src.latex_generation.tex_path import (
     get_element_path_for_relative_tex_input,
     get_element_path_to_save_tex,
     get_section_path_for_relative_tex_input,
     get_section_path_to_save_tex,
 )
-from MakeResume.latex_generation.TexElement import TexElementData
-from MakeResume.latex_generation.types import TexSectionData
+from src.latex_generation.TexElement import TexElementData
+from src.latex_generation.types import TexSectionData
 
 t_path = str
 

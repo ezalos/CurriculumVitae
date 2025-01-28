@@ -1,8 +1,9 @@
 import os
 
 from dynaconf import settings
-from MakeResume.latex_generation.types import TexSectionData
-from MakeResume.resume_sources.all_experiences import ExperienceData
+
+from src.latex_generation.types import TexSectionData
+from src.resume_sources.all_experiences import ExperienceData
 
 t_path = str
 

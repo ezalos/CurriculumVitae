@@ -4,7 +4,8 @@ from typing import List
 from dotenv import load_dotenv
 from langchain_anthropic import ChatAnthropic
 from langchain_community.llms import Ollama
-from MakeResume.resume_sources.all_experiences import ExperienceData
+
+from src.resume_sources.all_experiences import ExperienceData
 
 
 class ResumeTailor:

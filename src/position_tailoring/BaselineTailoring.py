@@ -1,6 +1,6 @@
 from typing import List
 
-from MakeResume.resume_sources.all_experiences import ExperienceData
+from src.resume_sources.all_experiences import ExperienceData
 
 
 class BaselineTailoring:

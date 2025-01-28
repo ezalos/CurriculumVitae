@@ -1,8 +1,8 @@
 from datetime import datetime
 from typing import List
 
-from MakeResume.latex_generation.types import TexElementData
-from MakeResume.resume_sources.all_experiences import ExperienceData
+from src.latex_generation.types import TexElementData
+from src.resume_sources.all_experiences import ExperienceData
 
 t_path = str
 

@@ -1,9 +1,9 @@
 from typing import List
 
-from MakeResume.latex_generation.TexElement import TexElement
-from MakeResume.latex_generation.WriteLaTeX import WriteLaTeX
-from MakeResume.position_tailoring.BaselineTailoring import BaselineTailoring
-from MakeResume.resume_sources.all_experiences import ExperienceData, work_experience
+from src.latex_generation.TexElement import TexElement
+from src.latex_generation.WriteLaTeX import WriteLaTeX
+from src.position_tailoring.BaselineTailoring import BaselineTailoring
+from src.resume_sources.all_experiences import ExperienceData, work_experience
 
 
 class ComposeCV:

@@ -1,5 +1,6 @@
 import fire
-from MakeResume.ComposeCV import ComposeCV
+
+from src.ComposeCV import ComposeCV
 
 
 def main():
