@@ -300,7 +300,6 @@ source = { virtual = "." }
 dependencies = [
     { name = "annotated-types" },
     { name = "anthropic" },
-    { name = "dynaconf" },
     { name = "fire" },
     { name = "langchain" },
     { name = "langchain-anthropic" },
@@ -321,7 +320,6 @@ dependencies = [
 requires-dist = [
     { name = "annotated-types", specifier = "==0.7.0" },
     { name = "anthropic", specifier = ">=0.45.1" },
-    { name = "dynaconf", specifier = "==3.1.9" },
     { name = "fire", specifier = "==0.4.0" },
     { name = "langchain", specifier = ">=0.3.15" },
     { name = "langchain-anthropic", specifier = ">=0.3.4" },
@@ -367,15 +365,6 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/fc/f8/98eea607f65de6527f8a2e8885fc8015d3e6f5775df186e443e0964a11c3/distro-1.9.0.tar.gz", hash = "sha256:2fa77c6fd8940f116ee1d6b94a2f90b13b5ea8d019b98bc8bafdcabcdd9bdbed", size = 60722 }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/12/b3/231ffd4ab1fc9d679809f356cebee130ac7daa00d6d6f3206dd4fd137e9e/distro-1.9.0-py3-none-any.whl", hash = "sha256:7bffd925d65168f85027d8da9af6bddab658135b840670a223589bc0c8ef02b2", size = 20277 },
-]
-
-[[package]]
-name = "dynaconf"
-version = "3.1.9"
-source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/f0/0e/3c102db167de3e2bb3a36a680a89c27b9b08d9f856b2164cc1a03db96f1c/dynaconf-3.1.9.tar.gz", hash = "sha256:f435c9e5b0b4b1dddf5e17e60a1e4c91ae0e6275aa51522456e671a7be3380eb", size = 199235 }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/48/7b/50059a4b56354801c34929a831130893faf838fd10d28c38d4dba8276568/dynaconf-3.1.9-py2.py3-none-any.whl", hash = "sha256:9eaaa6e64a4a64225f80cdad14379a37656b8f2dc607ab0fd949b75d479674cc", size = 202807 },
 ]
 
 [[package]]

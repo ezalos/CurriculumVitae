@@ -1,11 +1,11 @@
 import os
 
-from dynaconf import settings
-
 from src.latex_generation.types import TexSectionData
 from src.resume_sources.all_experiences import ExperienceData
 
 t_path = str
+LATEX_CV_PARTS = "./resume/latex/sections/body/"
+LATEX_EXPERIENCE = "Experience/"
 
 # ---------------------------------------------------------------------------- #
 #                                    ELEMENT                                   #
@@ -17,7 +17,7 @@ def get_element_path_to_save_tex(section_name: str, experience: ExperienceData) 
     company = experience.at
     title = experience.title
     tex_name = begin_date + "_" + "_" + company + "_" + title + ".auto_gen.tex"
-    tex_path = os.path.join(settings.LATEX_CV_PARTS, section_name, tex_name)
+    tex_path = os.path.join(LATEX_CV_PARTS, section_name, tex_name)
     return tex_path
 
 
@@ -32,7 +32,7 @@ def get_element_path_for_relative_tex_input(path_to_save_tex: t_path) -> t_path:
 
 
 def get_section_path_to_save_tex(tex_section_data: TexSectionData) -> t_path:
-    input_path = os.path.join(settings.LATEX_CV_PARTS, tex_section_data.section_name, "input.tex")
+    input_path = os.path.join(LATEX_CV_PARTS, tex_section_data.section_name, "input.tex")
     return input_path
 
 
@@ -45,4 +45,4 @@ def get_section_path_for_relative_tex_input(tex_section_data: TexSectionData) ->
 #                                TOP TEX IMPORT                                #
 # ---------------------------------------------------------------------------- #
 
-TOP_TEX_IMPORT_PATH = os.path.join(settings.LATEX_CV_PARTS, "input.tex")
+TOP_TEX_IMPORT_PATH = os.path.join(LATEX_CV_PARTS, "input.tex")

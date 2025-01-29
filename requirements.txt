@@ -39,8 +39,6 @@ defusedxml==0.7.1
     # via langchain-anthropic
 distro==1.9.0
     # via anthropic
-dynaconf==3.1.9
-    # via curriculumvitae (pyproject.toml)
 exceptiongroup==1.2.2
     # via anyio
 fire==0.4.0
