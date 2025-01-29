@@ -1,10 +1,8 @@
 # Curriculum Vitae
 
 Automatic Curriculum Vitae generation
-# Curriculum Vitae
 
 - [Curriculum Vitae](#curriculum-vitae)
-- [Curriculum Vitae](#curriculum-vitae-1)
 	- [My Resume](#my-resume)
 	- [Project goals](#project-goals)
 	- [Installation](#installation)
