@@ -94,8 +94,9 @@ elif [ -d ".venv" ]; then
     source .venv/bin/activate
 fi
 
-# Verify uv environment is working
-if ! uv tree > /dev/null 2>&1; then
+# Verify virtual environment is activated
+PYTHON_PATH=$(which python)
+if ! echo "$PYTHON_PATH" | grep -q ".venv"; then
 	echo -e "${COLOR_RED}Python virtual environment is not properly activated${COLOR_RESET}"
 	exit 1
 fi
