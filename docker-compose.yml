@@ -1,0 +1,21 @@
+services:
+  resume:
+    build:
+      context: .
+      args:
+        - DOCKER_TAG=${DOCKER_TAG:-latest}
+    image: ezalos/resume-builder:${DOCKER_TAG:-latest}
+    volumes:
+      - ./src:/app/src:ro
+      - ./resume:/app/resume
+      - ./scripts:/app/scripts:ro
+    environment:
+      - PYTHONUNBUFFERED=1
+      - VIRTUAL_ENV=/app/.venv
+      - PATH=/root/.local/bin:/app/.venv/bin:$PATH
+    command: ["My_Resume"]
+
+    # # UNCOMMENT TO DEBUG:
+    # stdin_open: true
+    # tty: true
+    # entrypoint: ["/bin/bash"]

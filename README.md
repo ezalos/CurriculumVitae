@@ -1,14 +1,18 @@
 # Curriculum Vitae
 
 Automatic Curriculum Vitae generation
+# Curriculum Vitae
 
 - [Curriculum Vitae](#curriculum-vitae)
+- [Curriculum Vitae](#curriculum-vitae-1)
 	- [My Resume](#my-resume)
 	- [Project goals](#project-goals)
-	- [Dependencies](#dependencies)
 	- [Installation](#installation)
-	- [Build Resume](#build-resume)
-	- [Dev :](#dev-)
+	- [Usage](#usage)
+	- [Development](#development)
+		- [Local Build](#local-build)
+		- [Docker Build](#docker-build)
+		- [Update requirements](#update-requirements)
 
 ## My Resume
 
@@ -26,43 +30,40 @@ Automatic Curriculum Vitae generation
      - responsibilities
      - technologies -->
 
-
-## Dependencies
-
-For this project you need to have installed:
-
- - `docker`
- - `uv`
- - apt:
-   - pdftoppm
-   - pngquant
-
-
 ## Installation
 
-Install uv
+- Install docker compose
+- Clone repo
+
+## Usage
+
 ```sh
-curl -LsSf https://astral.sh/uv/install.sh | sh
+docker compose run --rm resume My_Custom_Resume
 ```
 
-Setup venv
+The resume can be found in `resume/out/pdf/My_Custom_Resume.pdf`
+
+
+## Development
+
+### Local Build
 ```sh
-uv venv
-source .venv/bin/activate
-uv sync
+bash scripts/build_resume.sh My_Resume
 ```
 
-## Build Resume
-
+### Docker Build
 ```sh
-bash build_it.sh My_Resume
+# Build and run with default tag (latest)
+docker compose up
+
+# Build with a specific version
+DOCKER_TAG=1.0.0 docker compose up
+
+# Build and push with specific version
+./scripts/build_and_push_docker.sh 1.0.0
 ```
 
-## Dev :
-
-Update requirements :
-
+### Update requirements
 ```sh
-rm requirements.txt
 uv pip compile pyproject.toml -o requirements.txt
 ```
