@@ -53,14 +53,6 @@ repos:
       - id: prettier
         types: [yaml]
 
-  # python code analysis
-  # - repo: https://github.com/PyCQA/flake8
-  #   rev: 4.0.1
-  #   hooks:
-  #     - id: flake8
-  #       # Compatibility with NPtyping
-  #       args: ["--extend-ignore=F722,F821"]
-
   - repo: https://github.com/shellcheck-py/shellcheck-py
     rev: v0.10.0.1
     hooks:
