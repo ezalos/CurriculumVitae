@@ -32,16 +32,17 @@ Automatic Curriculum Vitae generation
 
 ## Installation
 
-- Install docker compose
-- Clone repo
+- Install docker compose: https://docs.docker.com/compose/install/
 
 ## Usage
 
 ```sh
+git clone https://github.com/ezalos/CurriculumVitae.git
+cd CurriculumVitae
 docker compose run --rm resume My_Custom_Resume
 ```
 
-The resume can be found in `resume/out/pdf/My_Custom_Resume.pdf`
+The built resume can be found in `resume/out/pdf/My_Custom_Resume.pdf`
 
 
 ## Development
