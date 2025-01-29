@@ -3,7 +3,7 @@ repos:
     hooks:
       - id: check-no-commit
         name: Check for !nocommit
-        entry: check_nocommit.sh
+        entry: scripts/check_nocommit.sh
         language: script
         files: ".*" # This will apply to all files
 
@@ -60,6 +60,18 @@ repos:
   #     - id: flake8
   #       # Compatibility with NPtyping
   #       args: ["--extend-ignore=F722,F821"]
+
+  - repo: https://github.com/shellcheck-py/shellcheck-py
+    rev: v0.10.0.1
+    hooks:
+      - id: shellcheck
+        args: ["-e", "SC1017,SC1071"]
+
+  - repo: https://github.com/AleksaC/hadolint-py
+    rev: v2.12.1b3
+    hooks:
+      - id: hadolint
+        files: Dockerfile*
 
   - repo: https://github.com/jonasbb/pre-commit-latex-hooks
     rev: v1.4.3
