@@ -14,6 +14,13 @@ Automatic Curriculum Vitae generation
 
 ## My Resume
 
+<div align="center">
+  <a href="https://raw.githubusercontent.com/ezalos/CurriculumVitae/refs/heads/master/resume/out/pdf/latest.pdf" style="text-decoration: none;">
+    <img src="https://img.shields.io/badge/Download_PDF-EC1C24?style=for-the-badge&logo=adobe-acrobat-reader&logoColor=white" alt="Download PDF" />
+  </a>
+</div>
+
+
 ![CV Louis DEVELLE](resume/out/latest.png)
 
 ## Project goals
