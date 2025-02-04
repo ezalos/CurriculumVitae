@@ -74,8 +74,12 @@ class TexElement:
             if months > 0:
                 total_time += f" {months} mois"  # + ("s" if months > 1 else "")
 
-        details = f"{total_time} [{from_} - {to}]"
-        details = tex_escape_string(details)
+        details = (
+            f"{tex_escape_string(total_time)} "
+            r"\textinbold{[}"
+            f"{tex_escape_string(f'{from_} - {to}')}"
+            r"\textinbold{]}"
+        )
         return details
 
     def _get_header(self) -> str:

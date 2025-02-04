@@ -46,11 +46,12 @@ icono_experience = ExperienceData(
         context="""Co-fondateur d'icono, un moteur de recherche vidéo multimodal in-house (pas d'API externe). Responsabilité totale sur l'IA, la Data, l'Infra et l'API.""",
         # https://www.icono-search.com/""",
         highlights_realisations=[
-            "Stack ML sans API externe permettant une recherche multimodale (visuelle, visages, paroles) dans les vidéos.",
+            """Pour permettre la recherche zero-shot dans les vidéos, création d'une stack ML propriétaire complète avec embeddings multimodaux, permettant l'analyse de plus de 70M de segments vidéo sans dépendance à des API externes.""",
             "Système d'analyse distribuée avec multi cloud et multi nodes GPU. La pipeline d'ingestion ML est capable de dépasser les 1M de vidéo shots traités par jour.",
             "Throughput de 2.75s (p95) pour une page de recherche, avec plus de 70 millions de vidéo shots recherchables (> 7 ans de vidéos).",
         ],
         realisations=[
+            "Stack ML sans API externe permettant une recherche multimodale (visuelle, visages, paroles) dans les vidéos.",
             """Pour permettre la recherche zero-shot dans les vidéos, création d'une stack ML propriétaire complète avec embeddings multimodaux, permettant l'analyse de plus de 70M de segments vidéo sans dépendance à des API externes.""",
             """Pour permettre des releases quotidiennes, mise en place d'une stack MLOps complète avec CI/CD, tests automatisés et déploiement containerisé, incluant monitoring et auto-healing des instances.""",
             """Pour optimiser les coûts d'infrastructure, architecture d'une solution multi-cloud avec nodes GPU distribués, permettant l'analyse de plus d'1M de vidéos/jour pour moins de 0.19€/heure.""",
@@ -90,15 +91,15 @@ icono_experience = ExperienceData(
 # ---------------------------------------------------------------------------- #
 
 amsterdam_tech_experience = ExperienceData(
-    at="Amsterdam Tech University",
-    title="Enseignant",
+    at="Amsterdam Tech",
+    title="Enseignant Universitaire",
     contract="Temps partiel",
     where="Amsterdam, Netherlands (remote)",
     from_="04/2024",
     to="Present",
     logo="resume_parts/experience/2024-04_Amsterdamtech/Amsterdamtech Logo.png",
     Body=ExperienceBody(
-        context="Sessions hebdomadaires, aux 2e et 4e année en Master Machine Learning / Data Science",
+        context="Enseignement en anglais hebdomadaire aux 2e et 4e année en Master ML / DS",
         realisations=[
             "Transmissions de connaissance et de methodologie de projet, lecture et analyse de papiers de recherche",
             "Suivi de projets de fin d'étude, transmission de méthodologie de R&D pour ML/DS.",
@@ -143,13 +144,15 @@ revolve_summary = ExperienceData(
     to="10/2022",
     logo="resume_parts/experience/2021-10_Revolve/logo.png",
     Body=ExperienceBody(
-        context="Apprentissage. Recherche en machine learning pour prédiction de victoire sur League of Legends, et ML-Ops pour déploiements de modèles sur Slack.",
+        context="Recherche en deep learning prédictif pour l'esport et création d'une suite ML-Ops pour déploiements sur Slack, réalisés dans le cadre d'un contrat d'apprentissage.",
         highlights_realisations=[
+            """Pour optimiser les performances des modèles, mise en place d'une pipeline d'entrainement avec Ray, Optuna et MLflow, permettant l'exploration systématique d'architectures sur 500k+ échantillons.""",
+            """Pour automatiser le déploiement de modèles ML, création d'un template CI/CD complet avec tests, versioning et monitoring, permettant des releases automatisées en Dev/Staging/Prod.""",
+        ],
+        realisations=[
             "Déploiement de modèles de machine learning sur Slack, avec un Bot Serverless.",
             "Entrainement de modèles de prédictions de victoire sur League of Legends.",
             "Création d’un template de déploiement sur AWS de modèles de Machine Learning.",
-        ],
-        realisations=[
             """Création d’un Bot Slack en Serverless s’occupant de la gestion de modèles de Machine Learning et de Deep Learning:
 - Déploiement des Endpoints Sage Maker automatique et quotidien
 - Interaction modèles <-> utilisateur depuis Slack avec données tabulaires / textes / images. Stockage des inputs utilisateurs / prédictions des modèles / feedback utilisateurs. Système de remontée d’erreurs in-Slack
@@ -359,7 +362,7 @@ ai_42_lab_director = ExperienceData(
     # to="09/2022",
     logo="resume_parts/experience/2021-09_42AI/logo.png",
     Body=ExperienceBody(
-        sentence_summary="""Direction technique et stratégique, recrutement, création de template de projets, formation, suivi jusqu'aux déploiements, et gestion des projets du Lab.""",
+        sentence_summary="""Leadership stratégique et technique d'équipes de développement (4 à 8 personnes par projet), avec responsabilités étendues du recrutement au déploiement, en parallèle de ma dernière année d'études.""",
         context="""Le Lab 42AI est un laboratoire de Machine Learning s'attaquant à des problèmes à impact positif pour la société.""",
         # """J'ai personnellement veillé à la création et au bon déroulement de chacun des projets du Lab.""",
         highlights_realisations=[
@@ -418,16 +421,16 @@ natixis_experience = ExperienceData(
     to="08/2020",
     logo="resume_parts/experience/2020-02_Natixis/logo.png",
     Body=ExperienceBody(
-        context="Stage de recherche : Développement d'un modèle d'outlier detection contre les cyber-attaques, et mise en production pour surveillance de 60 000 machines.",
+        context="Développement d'un système de détection d'attaques déployé sur 60 000 machines, réalisé dans le cadre d'un stage de recherche.",
         # context="""La détection d'attaques furtives par analyse de signaux faibles
         # Aujourd'hui, la lutte contre les malwares dans les entreprises est principalement une défense en réponse. Dans un but de défense proactive, ce projet fut l'occasion d'étudier et de mettre en pratique les dernières avancées permises par l'IA.
         # À travers la méthodologie Agile, ce stage s'est déroulé lors de la première édition du lab 42 / Natixis.""",
         highlights_realisations=[
             # "Etat de l'art sur l'outlier detection, et securite informatique Windows.",
-            "Feature engineering: parseur REGEX de command line résistant aux obfuscations, dictionnaires de comportements machines hebdomadaires",
-            "Évaluations et mise en production, avec réécriture pour calcul distribué.",
         ],
         realisations=[
+            "Feature engineering: parseur REGEX de command line résistant aux obfuscations, dictionnaires de comportements machines hebdomadaires",
+            "Évaluations et mise en production, avec réécriture pour calcul distribué.",
             "Etat de l'art sur l'outlier detection, et securite informatique Windows.",
             "Heavy feature engineering: (parseur REGEX de command line résistant aux offuscations, dictionnaires de comportements machines hebdomadaires)",
             "Evaluation et mise en production, avec reecriture pour calcul distribué.",
@@ -551,7 +554,7 @@ Level > 21 in school""",
 formation_summary = ExperienceData(
     # at="Independant",
     at="",
-    title="Formateur",
+    title="Formateur Machine Learning / Data Science",
     contract="Contract",
     where="Paris, France",
     from_="09/2020",
@@ -560,7 +563,7 @@ formation_summary = ExperienceData(
     logo=None,
     Body=ExperienceBody(
         context="""Formateur Machine Learning / Data Science sur des sessions de 1 à 5 jours.\n
-Entreprises formées : Dassault Systèmes (US), IGPDE, Cartier, Pôle Emploi,...""",
+Entreprises formées : Dassault Systèmes (US), IGPDE, Cartier, ...""",
         # realisations=[
         #     # "Dassault Systemes & IGPDE: Python et Data Science et Machine Learning",
         #     # "Cartier & Pôle Emploi: Python et Data Science",
