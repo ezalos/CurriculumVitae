@@ -51,6 +51,9 @@ icono_experience = ExperienceData(
             "Throughput de 2.75s (p95) pour une page de recherche, avec plus de 70 millions de vidéo shots recherchables (> 7 ans de vidéos).",
         ],
         realisations=[
+            """Pour permettre la recherche zero-shot dans les vidéos, création d'une stack ML propriétaire complète avec embeddings multimodaux, permettant l'analyse de plus de 70M de segments vidéo sans dépendance à des API externes.""",
+            """Pour permettre des releases quotidiennes, mise en place d'une stack MLOps complète avec CI/CD, tests automatisés et déploiement containerisé, incluant monitoring et auto-healing des instances.""",
+            """Pour optimiser les coûts d'infrastructure, architecture d'une solution multi-cloud avec nodes GPU distribués, permettant l'analyse de plus d'1M de vidéos/jour pour moins de 0.19€/heure.""",
             """Stack ML proprietaire (aucune API externe), avec multi modality search :
 			\n- Recherche audio et vidéo croisee: trouve un sujet aborde par une personnalite donee.""",
             """Stack ML proprietaire (aucune API externe), avec multi modality search :
