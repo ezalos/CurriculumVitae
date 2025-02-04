@@ -20,6 +20,7 @@ COLOR_YELLOW="\e[1;33m"
 COLOR_RESET="\e[0m"
 
 CV_NAME="CV_Louis_DEVELLE"
+CV_NAME_LATEST="CV-Louis_DEVELLE-latest"
 CV_DIR_LATEX="$(pwd)/resume/latex"
 
 ################################################################################
@@ -138,16 +139,16 @@ fi
 cd - || exit 1
 
 cp -f "${CV_DIR_LATEX}/cv_12.pdf" "resume/out/pdf/${CV_NAME}.pdf"
-cp -f "resume/out/pdf/${CV_NAME}.pdf" resume/out/pdf/latest.pdf
+cp -f "resume/out/pdf/${CV_NAME}.pdf" resume/out/pdf/${CV_NAME_LATEST}.pdf
 
 
 ################################################################################
 # PNG generation
 ################################################################################
 
-rm -f resume/out/latest.png
+rm -f resume/out/${CV_NAME_LATEST}.png
 
-if pdftoppm "resume/out/pdf/${CV_NAME}.pdf" resume/out/latest -png -f 1 -singlefile; then
+if pdftoppm "resume/out/pdf/${CV_NAME}.pdf" resume/out/${CV_NAME_LATEST} -png -f 1 -singlefile; then
 	echo -e "${COLOR_GREEN}png has been generated !${COLOR_RESET}"
 else
 	echo -e "${COLOR_RED}ERROR: png could not be generated from pdf${COLOR_RESET}"
@@ -155,4 +156,4 @@ else
 fi
 
 # Compress PNG with pngquant
-pngquant --quality=75-90 --strip --force --output resume/out/latest.png resume/out/latest.png
+pngquant --quality=75-90 --strip --force --output resume/out/${CV_NAME_LATEST}.png resume/out/${CV_NAME_LATEST}.png
