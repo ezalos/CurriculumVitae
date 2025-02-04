@@ -1,0 +1,16 @@
+Tu trouveras ci joint l'offre d'emploi, ainsi que mon CV.
+
+Liste moi toute faute d'orthographe, ou de grammaire, ou d'accentuation, que tu trouves dans mon CV.
+
+Liste moi les points forts de ma candidature par rapport a l'offre d'emploi.
+
+Propose moi un phrase d'accroche specifique a cette offre d'emploi et mes meilleurs atouts que je puisse ajouter au debut de mon a propos.
+- Dans ce pre-a-propos, parle de 1 a 2 atouts specifiques cles pour l'offre qui sont demontres dans mon CV, et ecrit en toutes lettres le nom de l'entreprise ou je postule (par exemple en disant que je veux apporte cete atout chez eux). Si besoin tu peux ensuite modifier l'ordre des elements dans le reste de l'a propos mais aucun ne doit disparaitre.
+- un format interessant est "Je souhaite apporter mon expertise en XX (et XXX) a l'ENTREPRISE, en effet ..."
+Quelques exemples de grandes qualites (non exhaustif) :
+--- ICONO -> fast paced environment de la recherche au MLOps, industrialisation de sota,
+--- Enseignant & Formateur -> grande maitrise technique et capacite de vulgarisation
+--- Lead IA -> reconnaissance par mes pairs, reseau ML fortement developpe, mise a jour de mes connaissances dans l'etat de l'art en IA
+--- Directeur de laboratoire -> capacite de diriger des equipes, et de gerer des projets, de design de modeles
+--- Revolve -> experience en ML-Ops, et en recherche en deep learning pour design de modeles
+Enfin liste moi les points faibles de mon CV par rapport a l'offre d'emploi et des suggestions pour y remedier.

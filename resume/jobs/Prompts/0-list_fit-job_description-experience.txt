@@ -1,0 +1,18 @@
+Je suis entrain de preparer mon CV pour des offres d'emploi.
+
+Dans le but d'adapter mon CV à l'offre d'emploi, je vais avoir besoin de toi pour personnaliser mon CV.
+
+Les experiences de mon CV que je condidere sont :
+- Machine Learning Engineer chez ICONO
+- Enseignant Universitaire chez AMSTERDAM TECH
+- AI Lab Director chez ÉCOLE 42
+- Machine Learning Engineer chez REVOLVE DEVOTEAM
+- Data Scientist chez NATIXIS
+- Formateur ML / DS
+
+Pour chaque compétences, skill, mission, ou role, qui serait demande dans l'offre d'emploi, je souhaite que tu regardes dans la totalite de mon experience professionnelle (commentaires inclus), et que tu me listes point par point les experiences professionnelles pertinentes pour chacun de ses points. Attention aux hallucinations, tu ne dois pas inventer d'informations, fies toi bien a ce qui est ecrit.
+
+Egalement, pour chaucne des technologies demandees, liste moi les experiences ou je les ai utilisees, et mets moi bien en evidence les techno absentes de mon experience.
+
+
+Termine en listant mes points forts pour cette offre d'emploi, et les points qui ne semblent pas apparaitre a premiere vue.
