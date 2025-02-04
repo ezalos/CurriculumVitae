@@ -145,6 +145,8 @@ cp -f "resume/out/pdf/${CV_NAME}.pdf" resume/out/pdf/latest.pdf
 # PNG generation
 ################################################################################
 
+rm -f resume/out/latest.png
+
 if pdftoppm "resume/out/pdf/${CV_NAME}.pdf" resume/out/latest -png -f 1 -singlefile; then
 	echo -e "${COLOR_GREEN}png has been generated !${COLOR_RESET}"
 else
