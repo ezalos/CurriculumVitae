@@ -167,7 +167,7 @@ revolve_summary = ExperienceData(
 - Mise en production du modèle
 """,
         ],
-        technologies="Python, (PyTorch, Hydra, Optuna, Pandas), AWS (Sagemaker, IAM, S3, Cloud Watch, ECR, Lambda,, ECR), ML-Flow, DVC, Docker, Gitlab-CI, Python (Chalice, Boto3, Hugging-Face, Flask, Pytest), Gitlab-CI",
+        technologies="Python ML (PyTorch, Hugging-Face, Hydra, Optuna, Pandas), Python Dev (Chalice, Boto3, Flask, Pytest), AWS (Sagemaker, IAM, S3, Cloud Watch, ECR, Lambda), ML-Flow, DVC, Docker, Gitlab-CI",
     ),
 )
 
