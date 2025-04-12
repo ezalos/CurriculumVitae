@@ -29,6 +29,11 @@ class ExperienceData(BaseModel):
         populate_by_name = True
 
 
+################################################################################
+#########################           RESUME             #########################
+################################################################################
+
+
 # ---------------------------------------------------------------------------- #
 #                                    ICONO                                     #
 # ---------------------------------------------------------------------------- #
@@ -42,19 +47,19 @@ icono_experience = ExperienceData(
     to="02/2025",
     logo="resume_parts/experience/2022-11_ICONO/Icono Logo V4.png",
     Body=ExperienceBody(
-        sentence_summary="""Co-fondateur d'icono, un moteur de recherche vidéo. Responsabilités totales sur l'IA, la Data, l'Infra et l'API.""",
-        context="""Co-fondateur d'icono, un moteur de recherche vidéo multimodal in-house (pas d'API externe). Responsabilité totale sur l'IA, la Data, l'Infra et l'API.""",
+        sentence_summary="""Co-fondateur d'\href{https://icono-search.com}{icono-search.com}, un moteur de recherche vidéo. Responsabilités totales sur l'IA, la data, l'infra et l'API.""",
+        context="""Co-fondateur d', un moteur de recherche vidéo multimodal in-house (pas d'API externe). Responsabilité totale sur l'IA, la Data, l'Infra et l'API.""",
         # https://www.icono-search.com/""",
         highlights_realisations=[
             """Pour permettre la recherche zero-shot dans les vidéos, création d'une stack ML propriétaire complète avec embeddings multimodaux, permettant l'analyse de plus de 70M de segments vidéo sans dépendance à des API externes.""",
-            "Système d'analyse distribuée avec multi cloud et multi nodes GPU. La pipeline d'ingestion ML est capable de dépasser les 1M de vidéo shots traités par jour.",
+            "Système d'analyse distribuée avec multi cloud et multi nodes GPU. La pipeline d'ingestion ML est capable de dépasser les 1M de plans vidéo traités par jour.",
             "Throughput de 2.75s (p95) pour une page de recherche, avec plus de 70 millions de vidéo shots recherchables (> 7 ans de vidéos).",
         ],
         realisations=[
             "Stack ML sans API externe permettant une recherche multimodale (visuelle, visages, paroles) dans les vidéos.",
             """Pour permettre la recherche zero-shot dans les vidéos, création d'une stack ML propriétaire complète avec embeddings multimodaux, permettant l'analyse de plus de 70M de segments vidéo sans dépendance à des API externes.""",
             """Pour permettre des releases quotidiennes, mise en place d'une stack MLOps complète avec CI/CD, tests automatisés et déploiement containerisé, incluant monitoring et auto-healing des instances.""",
-            """Pour optimiser les coûts d'infrastructure, architecture d'une solution multi-cloud avec nodes GPU distribués, permettant l'analyse de plus d'1M de vidéos/jour pour moins de 0.19€/heure.""",
+            """Pour optimiser les coûts d'infrastructure, architecture d'une solution multi-cloud avec nodes GPU distribués, permettant l'analyse de plus d'1M de vidéos/jour de façon cost-effective.""",
             """Stack ML proprietaire (aucune API externe), avec multi modality search :
 			\n- Recherche audio et vidéo croisee: trouve un sujet aborde par une personnalite donee.""",
             """Stack ML proprietaire (aucune API externe), avec multi modality search :
@@ -99,41 +104,24 @@ amsterdam_tech_experience = ExperienceData(
     to="Present",
     logo="resume_parts/experience/2024-04_Amsterdamtech/Amsterdamtech Logo.png",
     Body=ExperienceBody(
-        context="Enseignement en anglais hebdomadaire aux 2e et 4e année en Master ML / DS",
+        context="Enseignement hebdomadaire et en anglais, pour les 2e et 4e année en Master ML / DS",
+        highlights_realisations=[
+            # "Lecture et analyse de papiers de recherche",
+            "Concepts de ML/DS allant de la Regression Lineaire aux Embeddings multimodaux.",
+            "Méthodologie R&D pour projets de fin d'étude en ML/DS",
+        ],
         realisations=[
-            "Transmissions de connaissance et de methodologie de projet, lecture et analyse de papiers de recherche",
-            "Suivi de projets de fin d'étude, transmission de méthodologie de R&D pour ML/DS.",
+            # "Transmissions de connaissance et de methodologie de projet, lecture et analyse de papiers de recherche",
+            # "Suivi de projets de fin d'étude, transmission de méthodologie de R&D pour ML/DS.",
+            "Enseignement de concepts de ML/DS allant de la Regression Lineaire aux Transformers.",
+            "Lecture et analyse de papiers de recherche",
+            "Enseignement de méthodologie R&D pour projets de fin d'étude en ML/DS",
         ],
         technologies="Powerpoint, Jupyter Notebooks, python, scikit-learn, pytorch, numpy, pandas, matplotlib, seaborn",
         highlights_technologies="",
     ),
 )
 
-# ---------------------------------------------------------------------------- #
-#                                  STATION F                                   #
-# ---------------------------------------------------------------------------- #
-
-station_f_experience = ExperienceData(
-    at="STATION F",
-    title="AI Lead",
-    contract="associative",
-    where="Paris, France",
-    from_="12/2023",
-    to="02/2025",
-    logo="resume_parts/experience/2022-11_ICONO/station_f.png",
-    Body=ExperienceBody(
-        context="Nommé AI Club Leader a Station F, le plus grand incubateur de startups au monde",
-        realisations=[
-            "Conseil des startups sur l'IA en fast paced environnement",
-            "Rencontre des nouvelles startups en IA pour les connecter avec des opportunités",
-            "Organisations de dejeuners IA pour dynamiser l'ecosysteme.",
-        ],
-    ),
-)
-
-# ---------------------------------------------------------------------------- #
-#                                   Revolve                                    #
-# ---------------------------------------------------------------------------- #
 
 revolve_summary = ExperienceData(
     at="Revolve Devoteam",
@@ -170,6 +158,143 @@ revolve_summary = ExperienceData(
         technologies="Python ML (PyTorch, Hugging-Face, Hydra, Optuna, Pandas), Python Dev (Chalice, Boto3, Flask, Pytest), AWS (Sagemaker, IAM, S3, Cloud Watch, ECR, Lambda), ML-Flow, DVC, Docker, Gitlab-CI",
     ),
 )
+
+ai_42_lab_director = ExperienceData(
+    at="école 42",
+    title="AI Lab Director",
+    contract="associative",
+    where="Paris, France",
+    from_="08/2021",
+    to="11/2022",
+    # from_="09/2021",
+    # to="09/2022",
+    logo="resume_parts/experience/2021-09_42AI/logo.png",
+    Body=ExperienceBody(
+        sentence_summary="""Leadership stratégique et technique d'équipes de développement (4 à 8 personnes par projet, 5 projets au total), avec responsabilités étendues du recrutement au déploiement, en parallèle de ma dernière année d'études.""",
+        context="""Le Lab 42AI est un laboratoire de Machine Learning s'attaquant à des problèmes à impact positif pour la société.""",
+        # """J'ai personnellement veillé à la création et au bon déroulement de chacun des projets du Lab.""",
+        highlights_realisations=[
+            "Création d'un outil de tracking de C. Elegans sous microscope pour le CNRS.",
+            # "Compétition de voiture autonome dans simulateur (DonkeyCar).",
+            "Analyse de sentiment quotidienne sur Twitter pour les élections présidentielles de 2022.",
+        ],
+        realisations=[
+            "Design du projet (objectif et feuille de route)",
+            "Recrutement étudiant (entretiens d'embauches et tests techniques)",
+            "Mise en place d'un squelette de projet permettant un démarrage Jour 1.",
+            "Suivi hebdomadaire des équipes: Méthode agile, conseils sur les choix techniques, et restitution de cours en groupe.",
+            "Résolution des points de blocage et transmissions des connaissances nécessaires au projet.",
+        ],
+        highlights_technologies="Python, (PyTorch, Sklearn, Hugging Face, Hydra, Optuna, Numpy, Matplotlib, Pytest), GitHub Actions, AWS, ML-Flow, DVC",
+    ),
+)
+
+
+natixis_experience = ExperienceData(
+    at="Natixis",
+    title="Data Scientist",
+    contract="internship",
+    where="Paris, France",
+    from_="02/2020",
+    to="08/2020",
+    logo="resume_parts/experience/2020-02_Natixis/logo.png",
+    Body=ExperienceBody(
+        context="Développement d'un système de détection d'attaques déployé sur 60 000 machines, réalisé dans le cadre d'un stage de recherche.",
+        # context="""La détection d'attaques furtives par analyse de signaux faibles
+        # Aujourd'hui, la lutte contre les malwares dans les entreprises est principalement une défense en réponse. Dans un but de défense proactive, ce projet fut l'occasion d'étudier et de mettre en pratique les dernières avancées permises par l'IA.
+        # À travers la méthodologie Agile, ce stage s'est déroulé lors de la première édition du lab 42 / Natixis.""",
+        highlights_realisations=[
+            # "Etat de l'art sur l'outlier detection, et securite informatique Windows.",
+        ],
+        realisations=[
+            "Feature engineering: parseur REGEX de command line résistant aux obfuscations, dictionnaires de comportements machines hebdomadaires",
+            "Évaluations et mise en production, avec réécriture pour calcul distribué.",
+            "Etat de l'art sur l'outlier detection, et securite informatique Windows.",
+            "Heavy feature engineering: (parseur REGEX de command line résistant aux offuscations, dictionnaires de comportements machines hebdomadaires)",
+            "Evaluation et mise en production, avec reecriture pour calcul distribué.",
+            "Création d'un dataset labélisé :",
+            "Sélection d'événements intéressants en collaboration avec les analystes de sécurité.",
+            "Analyse statistique, puis nettoyage de la donnée labellisée.",
+            "Création de features :",
+            "État de l'art sur la création de features (Machine Learning / Sécurité informatique)",
+            "Création de features depuis des données brutes textuelles (logs Windows/Linux/Apps)",
+            "Création d'un parseur de Command-Line en REGEX, résistant contre les techniques d'offuscations.",
+            "Mise en place de tables de correspondances CSV",
+            "Création automatique de dictionnaires hebdomadaires des couples Processus-Parent et Processus-Enfant, en relation avec le nombre de machines et le nombre d'exécutions du couple.",
+            "Entrainement de l'algorithme de détection :",
+            "État de l'art sur les modèles de machine Learning (non supervisé et supervisé)",
+            "Support Vector Machine, linear regression, NLP, Clustering, PCA",
+            "Data Visualisation",
+            "Mise en place de métriques d'évaluations :",
+            "Quantitatives: recall, précision et F-score sur multiples datasets",
+            "Qualitative: Relecture des résultats avec les analystes de sécurité",
+            "Mise en production de l'outil :",
+            "Réduction de la quantité de calculs et de la mémoire nécessaire",
+            "Réécriture du code pour permettre un calcul distribué",
+            "POC en Reinforcement Learning:",
+            "Mise en place du modèle d'Alpha Zero adapté au Puissance-4, sur 2 semaines.",
+        ],
+        technologies="Python (Numpy, Pandas, Scikit Learn, Matplotlib), Splunk, REGEX",
+    ),
+)
+
+formation_summary = ExperienceData(
+    # at="Independant",
+    at="",
+    title="Formateur Machine Learning / Data Science",
+    contract="Contract",
+    where="Paris, France",
+    from_="09/2020",
+    date_details="> 200 heures",
+    to="Present",
+    logo=None,
+    Body=ExperienceBody(
+        context="""Formateur Machine Learning / Data Science sur des sessions de 1 à 5 jours.\n
+Entreprises formées : Dassault Systèmes (US), IGPDE, Cartier, ...""",
+        # realisations=[
+        #     # "Dassault Systemes & IGPDE: Python et Data Science et Machine Learning",
+        #     # "Cartier & Pôle Emploi: Python et Data Science",
+        #     # "Cartier: Python et Data Science (scikit-learn, pandas, numpy, matplotlib, seaborn, jupyter-notebooks)",
+        #     # "Pôle Emploi: AWS (S3, EC2, EBS, EFS, RDS, DynamoDB, VPC, Road 53, IAM, CloudWatch, Lambda)",
+        #     # "42: Computer Vision (pytorch, tensorflow, keras, pytorch-lightning, hydra, optuna, numpy, matplotlib, pytest)",
+        #     # "42: Reinforcement Learning (pytorch, numpy, matplotlib, pytest)",
+        #     # "42: NLP (hugging-face, transformers, spacy, nltk, pytorch, tensorflow, keras, pytorch-lightning, hydra, optuna, numpy, matplotlib, pytest)",
+        # ],
+        # technologies="Python, Data Science (sklearn, pandas, numpy, matplotlib, jupyter-notebooks), Machine Learning (PyTorch, Optuna)",
+        highlights_technologies="",
+    ),
+)
+
+
+################################################################################
+#########################            EXTRA             #########################
+################################################################################
+
+# ---------------------------------------------------------------------------- #
+#                                  STATION F                                   #
+# ---------------------------------------------------------------------------- #
+
+station_f_experience = ExperienceData(
+    at="STATION F",
+    title="AI Lead",
+    contract="associative",
+    where="Paris, France",
+    from_="12/2023",
+    to="02/2025",
+    logo="resume_parts/experience/2022-11_ICONO/station_f.png",
+    Body=ExperienceBody(
+        context="Nommé AI Club Leader a Station F, le plus grand incubateur de startups au monde",
+        realisations=[
+            "Conseil des startups sur l'IA en fast paced environnement",
+            "Rencontre des nouvelles startups en IA pour les connecter avec des opportunités",
+            "Organisations de dejeuners IA pour dynamiser l'ecosysteme.",
+        ],
+    ),
+)
+
+# ---------------------------------------------------------------------------- #
+#                                   Revolve                                    #
+# ---------------------------------------------------------------------------- #
 
 
 revolve_dl_research = ExperienceData(
@@ -351,39 +476,39 @@ https://github.com/JBarmentlo/Self-Aware-Driving-Patate""",
     ),
 )
 
-ai_42_lab_director = ExperienceData(
-    at="école 42",
-    title="AI Lab Director",
-    contract="associative",
-    where="Paris, France",
-    from_="08/2021",
-    to="11/2022",
-    # from_="09/2021",
-    # to="09/2022",
-    logo="resume_parts/experience/2021-09_42AI/logo.png",
-    Body=ExperienceBody(
-        sentence_summary="""Leadership stratégique et technique d'équipes de développement (4 à 8 personnes par projet), avec responsabilités étendues du recrutement au déploiement, en parallèle de ma dernière année d'études.""",
-        context="""Le Lab 42AI est un laboratoire de Machine Learning s'attaquant à des problèmes à impact positif pour la société.""",
-        # """J'ai personnellement veillé à la création et au bon déroulement de chacun des projets du Lab.""",
-        highlights_realisations=[
-            "Création d'un outil de tracking de C. Elegans sous microscope pour le CNRS.",
-            "Compétition de voiture autonome dans simulateur (DonkeyCar).",
-            "Analyse de sentiment quotidienne sur Twitter pour les élections présidentielles de 2022.",
-        ],
-        realisations=[
-            "Design du projet (objectif et feuille de route)",
-            "Recrutement étudiant (entretiens d'embauches et tests techniques)",
-            "Mise en place d'un squelette de projet permettant un démarrage Jour 1.",
-            "Suivi hebdomadaire des équipes: Méthode agile, conseils sur les choix techniques, et restitution de cours en groupe.",
-            "Résolution des points de blocage et transmissions des connaissances nécessaires au projet.",
-            f"{ai_42_hand2text.Body = }",
-            f"{ai_42_elegant_elegans.Body = }",
-            f"{ai_42_sentimental.Body = }",
-            f"{ai_42_self_aware.Body = }",
-        ],
-        highlights_technologies="Python, (PyTorch, Sklearn, Hugging Face, Hydra, Optuna, Numpy, Matplotlib, Pytest), GitHub Actions, AWS, ML-Flow, DVC",
-    ),
-)
+# ai_42_lab_director = ExperienceData(
+#     at="école 42",
+#     title="AI Lab Director",
+#     contract="associative",
+#     where="Paris, France",
+#     from_="08/2021",
+#     to="11/2022",
+#     # from_="09/2021",
+#     # to="09/2022",
+#     logo="resume_parts/experience/2021-09_42AI/logo.png",
+#     Body=ExperienceBody(
+#         sentence_summary="""Leadership stratégique et technique d'équipes de développement (4 à 8 personnes par projet), avec responsabilités étendues du recrutement au déploiement, en parallèle de ma dernière année d'études.""",
+#         context="""Le Lab 42AI est un laboratoire de Machine Learning s'attaquant à des problèmes à impact positif pour la société.""",
+#         # """J'ai personnellement veillé à la création et au bon déroulement de chacun des projets du Lab.""",
+#         highlights_realisations=[
+#             "Création d'un outil de tracking de C. Elegans sous microscope pour le CNRS.",
+#             "Compétition de voiture autonome dans simulateur (DonkeyCar).",
+#             "Analyse de sentiment quotidienne sur Twitter pour les élections présidentielles de 2022.",
+#         ],
+#         realisations=[
+#             "Design du projet (objectif et feuille de route)",
+#             "Recrutement étudiant (entretiens d'embauches et tests techniques)",
+#             "Mise en place d'un squelette de projet permettant un démarrage Jour 1.",
+#             "Suivi hebdomadaire des équipes: Méthode agile, conseils sur les choix techniques, et restitution de cours en groupe.",
+#             "Résolution des points de blocage et transmissions des connaissances nécessaires au projet.",
+#             f"{ai_42_hand2text.Body = }",
+#             f"{ai_42_elegant_elegans.Body = }",
+#             f"{ai_42_sentimental.Body = }",
+#             f"{ai_42_self_aware.Body = }",
+#         ],
+#         highlights_technologies="Python, (PyTorch, Sklearn, Hugging Face, Hydra, Optuna, Numpy, Matplotlib, Pytest), GitHub Actions, AWS, ML-Flow, DVC",
+#     ),
+# )
 
 # ---------------------------------------------------------------------------- #
 #                             Paris AI Society                                 #
@@ -548,33 +673,6 @@ Level > 21 in school""",
             "Virtual CPU: Compilation, puis exécution de multiples programmes en simultané. Gestion de registres, virtualisation, et visualisation.",
             "Memory Allocation Manager: Kernel interface, multi-threadée, avec défragmentation. Résolution en temps logarithmique.",
         ],
-    ),
-)
-
-formation_summary = ExperienceData(
-    # at="Independant",
-    at="",
-    title="Formateur Machine Learning / Data Science",
-    contract="Contract",
-    where="Paris, France",
-    from_="09/2020",
-    date_details="> 200 heures",
-    to="Present",
-    logo=None,
-    Body=ExperienceBody(
-        context="""Formateur Machine Learning / Data Science sur des sessions de 1 à 5 jours.\n
-Entreprises formées : Dassault Systèmes (US), IGPDE, Cartier, ...""",
-        # realisations=[
-        #     # "Dassault Systemes & IGPDE: Python et Data Science et Machine Learning",
-        #     # "Cartier & Pôle Emploi: Python et Data Science",
-        #     # "Cartier: Python et Data Science (scikit-learn, pandas, numpy, matplotlib, seaborn, jupyter-notebooks)",
-        #     # "Pôle Emploi: AWS (S3, EC2, EBS, EFS, RDS, DynamoDB, VPC, Road 53, IAM, CloudWatch, Lambda)",
-        #     # "42: Computer Vision (pytorch, tensorflow, keras, pytorch-lightning, hydra, optuna, numpy, matplotlib, pytest)",
-        #     # "42: Reinforcement Learning (pytorch, numpy, matplotlib, pytest)",
-        #     # "42: NLP (hugging-face, transformers, spacy, nltk, pytorch, tensorflow, keras, pytorch-lightning, hydra, optuna, numpy, matplotlib, pytest)",
-        # ],
-        # technologies="Python, Data Science (sklearn, pandas, numpy, matplotlib, jupyter-notebooks), Machine Learning (PyTorch, Optuna)",
-        highlights_technologies="",
     ),
 )
 
